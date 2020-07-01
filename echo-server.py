@@ -1,7 +1,7 @@
 import socket
 
 HOST = "127.0.0.1" # localhost
-PORT = "98765" # port to listen on, non privileged ports are > 1023
+PORT = 65432 # port to listen on, non privileged ports are > 1023
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
